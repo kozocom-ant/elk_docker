@@ -75,6 +75,8 @@ services:
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro,Z
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro,Z
+      - ./logstash/username.csv:/usr/share/csv-log/username.csv
+    command: logstash -f /usr/share/logstash/pipeline/logstash.conf
     ports:
       - 5044:5044
       - 50000:50000/tcp

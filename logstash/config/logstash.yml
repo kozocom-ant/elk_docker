@@ -4,4 +4,12 @@
 #
 http.host: 0.0.0.0
 
+# log.level: debug
 node.name: logstash
+
+## X-Pack security credentials
+#
+# xpack.monitoring.enabled: true
+# xpack.monitoring.elasticsearch.username: logstash_internal
+# xpack.monitoring.elasticsearch.password: changeme
+
